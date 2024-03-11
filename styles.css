@@ -1,0 +1,105 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-size : 16px;
+    font-family: system-ui;
+    background-color: var(--Pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card{
+    background-color: var(--Very-pale-blue);
+    width: 350px;
+    border-radius: 20px;
+    
+}
+
+
+.card-top {
+    background-image: url(images/illustration-hero.svg);
+    height: 190px;
+    border-radius: 20px;
+    background-size: cover;
+}
+.order-info {
+    padding: 20px 40px;
+    text-align: center;
+   
+}
+.order-info h1 {
+    margin-bottom: 10px;
+}
+.order-info p{
+    margin-bottom: 10px;
+}
+.payment {
+    display: flex;
+    justify-content: center ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    margin-top: 20px;
+    
+}
+.payment-section {
+    align-items: center;
+    display: flex;
+    
+}
+.payment a {
+    color: var(--Bright-blue);
+    font-weight: bold;
+    cursor: pointer;
+}
+.tag {
+    
+    margin-left: 10px;
+}
+.payment-finish {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#payment-finish {
+    text-align: center;
+    font-weight:lighter;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.payment-finish button {
+    background-color: var(--Bright-blue);
+    border-radius: 12PX;
+    color: white;
+    box-shadow: inset;
+    height: 40px;
+    cursor: pointer;
+}
+.payment-finish button:hover { 
+    background-color: var(--Desaturated-blue);
+    color: white;
+}
+#payment-finish:hover{
+    font-weight: bold;
+}
+.payment a:hover {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+    
